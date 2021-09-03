@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_bottom_sheet"
+    android:orientation="vertical">
+
+    <!--Título-->
+    <TextView
+        android:id="@+id/text_view_nombre_comercio"
+        style="@style/StyleTituloBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="17dp"></TextView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+    <!--Cuerpo-->
+    <LinearLayout
+        style="@style/StyleCuerpoBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Servicios:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/text_view_servicio_comercio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/StyleCuerpoBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Dirección:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/text_view_direccion_comercio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/StyleCuerpoBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Fono:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/text_view_fono_comercio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

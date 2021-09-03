@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_avisos"
+    app:itemIconTint="@drawable/drawer_selector"
+    app:itemTextColor="@drawable/drawer_selector"
+    >
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="cl.ufro.dci.proyectosmartcity.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_avisos"
+        android:name="cl.ufro.dci.proyectosmartcity.ui.Avisos.AvisosFragment"
+        android:label="@string/menu_avisos"
+        tools:layout="@layout/fragment_avisos" />
+
+    <fragment
+        android:id="@+id/nav_cierre_sesion"
+        android:name="cl.ufro.dci.proyectosmartcity.ui.CerrarSesion.CerrarFragment"
+        android:label="@string/menu_cierre_sesion"
+        tools:layout="@layout/fragment_sesion" />
+    <fragment
+        android:id="@+id/nav_mapa"
+        android:name="cl.ufro.dci.proyectosmartcity.ui.mapa.MapaFragment"
+        android:label="@string/menu_mapa"
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/nav_mensajes"
+        android:name="cl.ufro.dci.proyectosmartcity.ui.mensajes.MensajesFragment"
+        android:label="@string/menu_mensajes"
+        tools:layout="@layout/fragment_mensajes" />
+
+
+</navigation>
